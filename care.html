@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Screening Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        td, th {
+            border: 1px solid #ccc;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        th.section {
+            background: #eee;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="date"], input[type="email"], input[type="tel"] {
+            width: 95%;
+            padding: 5px;
+        }
+
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .submit-btn {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Patient Intake</h2>
+
+    <table>
+        <tr>
+            <th colspan="3" class="section">Patient section</th>
+            </tr>
+            <tr>
+            <td>Patient Id:<br><input type="text"></td>
+        </tr>
+        <tr>
+            <th colspan="3" class="section">Patient details</th>
+        </tr>
+
+        <tr>
+            <td>First name:<br><input type="text"></td>
+            <td colspan="2">Last name:<br><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Date of birth:<br><input type="date"></td>
+            <td colspan="2">Gender:<br><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Address:<br><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>City:<br><input type="text"></td>
+            <td>State:<br><input type="text"></td>
+            <td>Zip code:<br><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Email address:<br><input type="email"></td>
+            <td colspan="2">Phone number:<br><input type="tel"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Emergency contact name:<br><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Emergency contact number:<br><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Emergency contact information:<br><input type="text"></td>
+        </tr>
+
+        <tr>
+            <th colspan="3" class="section">Office section</th>
+        </tr>
+
+        <tr>
+            <th colspan="3">General health</th>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <label><input type="checkbox"> Required</label>
+                <p><b>Instructions:</b> Check the symptoms you recently had or currently have.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="checkbox-group">
+                <label><input type="checkbox"> Fever (37.5°C or above)</label>
+                <label><input type="checkbox"> Cough</label>
+                <label><input type="checkbox"> Chills</label>
+            </td>
+            <td class="checkbox-group">
+                <label><input type="checkbox"> Shortness of breath</label>
+                <label><input type="checkbox"> Sore throat</label>
+                <label><input type="checkbox"> Headache</label>
+            </td>
+            <td class="checkbox-group">
+                <label><input type="checkbox"> Congestion or runny nose</label>
+                <label><input type="checkbox"> Nausea or vomiting</label>
+                <label><input type="checkbox"> Diarrhea</label>
+                <label><input type="checkbox"> Other</label>
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan="3">Chronic conditions/illnesses</th>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <label><input type="checkbox"> Required</label>
+                <p><b>Instructions:</b> Check the conditions that you have now or have had in the past.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="checkbox-group">
+                <label><input type="checkbox"> Heart problems</label>
+                <label><input type="checkbox"> Angina</label>
+                <label><input type="checkbox"> High blood pressure</label>
+            </td>
+            <td class="checkbox-group">
+                <label><input type="checkbox"> Asthma/bronchitis</label>
+                <label><input type="checkbox"> Epilepsy</label>
+                <label><input type="checkbox"> Arthritis</label>
+            </td>
+            <td class="checkbox-group">
+                <label><input type="checkbox"> High cholesterol</label>
+                <label><input type="checkbox"> Diabetes</label>
+                <label><input type="checkbox"> Chronic kidney disease</label>
+                <label><input type="checkbox"> Other</label>
+            </td>
+        </tr>
+    </table>
+
+    <div class="submit-btn">
+        <button type="submit">Submit</button>
+    </div>
+</div>
+
+</body>
+</html>
